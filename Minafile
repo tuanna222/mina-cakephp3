@@ -6,13 +6,12 @@ require 'mina/git'
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :domain, '127.0.0.1'
-set :deploy_to, '/var/www/tabisns'
-set :repository, 'https://1984tuanna:123456@git.1steam.com/tabisns/TabiServer.git'
-set :branch, 'dev'
+set :domain, 'example.com'
+set :deploy_to, '/var/www/my-app'
+set :repository, 'https://path.to.git'
+set :branch, 'master'
 
-# Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
-# They will be linked in the 'deploy:link_shared_paths' step.
+# Manually create these paths in shared in your server.
 set :shared_paths, ['tmp', 'logs']
 
 # Optional settings:
